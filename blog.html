@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+
+    <!-- Daisy Ui cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- tailwind cdn -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'btn-primary': '#ABEF5F',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header class="sticky top-0 overflow-hidden z-10 backdrop-blur-sm">
+        <nav class="block space-y-10">
+            <!-- nav title -->
+            <div class="navbar bg-base-200 px-6">
+                <div class="navbar-start">
+
+                    <a class="btn btn-xs bg-btn-primary sm:btn-sm md:btn-md lg:btn-lg" href="index.html">Home</a>
+                </div>
+                <div class="navbar-center hidden md:flex gap-4">
+                    <img src="assets/logo.png" alt="">
+                    <h2 class="text-xl font-bold">Donate Bangladesh</h2>
+                </div>
+                <div class="navbar-end">
+                    <div>
+                        <div class="stat">
+                            <div class="flex gap-2">
+                                <img src="assets/coin.png" alt=""> <span id="account-balance"
+                                    class="font-semibold">5500</span><span class="font-semibold">BDT</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- nav button -->
+            <div class="flex justify-center gap-3 pb-5">
+                <button class="btn bg-btn-primary">Donation</button>
+                <button class="btn btn-outline">History</button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- collapse section -->
+        <div class="space-y-4">
+            <!-- collapse 1 -->
+            <div class="bg-base-200 collapse">
+                <input type="checkbox" class="peer" />
+                <div class="collapse-title bg-slate-300 peer-checked:bg-secondary peer-checked:text-secondary-content">
+                    What is the Document Object Model (DOM)?
+                </div>
+                <div class="collapse-content bg-gray-100 peer-checked:bg-secondary peer-checked:text-secondary-content">
+                    <p>DOM is a HTML document program interface.</p>
+                </div>
+            </div>
+            <!-- collapse 2 -->
+            <div class="bg-base-200 collapse">
+                <input type="checkbox" class="peer" />
+                <div class="collapse-title bg-slate-300 peer-checked:bg-secondary peer-checked:text-secondary-content">
+                    How do you select an element from the DOM?
+                </div>
+                <div class="collapse-content bg-gray-100 peer-checked:bg-secondary peer-checked:text-secondary-content">
+                    <p>We can use "getElementByID()" or "getElementByClassName()" methods to select an element from DOM.</p>
+                </div>
+            </div>
+            <!-- collapse 3 -->
+            <div class="bg-base-200 collapse">
+                <input type="checkbox" class="peer" />
+                <div class="collapse-title bg-slate-300 peer-checked:bg-secondary peer-checked:text-secondary-content">
+                    What is event delegation in the context of the DOM, and why is it useful?
+                </div>
+                <div class="collapse-content bg-gray-100 peer-checked:bg-secondary peer-checked:text-secondary-content">
+                    <p>Event delegation is a concept of Event Bubbles. Which access the context of HTML bottom to up.</p>
+                </div>
+            </div>
+            <!-- collapse 4 -->
+            <div class="bg-base-200 collapse">
+                <input type="checkbox" class="peer" />
+                <div class="collapse-title bg-slate-300 peer-checked:bg-secondary peer-checked:text-secondary-content">
+                    How do you manipulate an element's attributes and styles using the DOM?
+                </div>
+                <div class="collapse-content bg-gray-100 peer-checked:bg-secondary peer-checked:text-secondary-content">
+                    <p>By removing or adding element's we can manipulate an element's attributes and styles.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer footer-center bg-base-300 text-base-content mt-52 p-4">
+        <aside>
+          <p>Copyright © {new Date().getFullYear()} - All right reserved</p>
+        </aside>
+      </footer>
+
+      <!-- script link -->
+      <script src="js/utilities.js"></script>
+      <script src="js/donate.js"></script>
+      <script src="js/features.js"></script>
+      
+</body>
+
+</html>
