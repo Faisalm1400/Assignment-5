@@ -6,6 +6,7 @@ document.getElementById('btn-donate-1')
         const donateMoney = getInputFieldValueById('input-donate-1');
         const balance = getTextFieldValueById('account-balance');
         const donateBalance = getTextFieldValueById('donate-balance-1');
+        const donateTitle = document.getElementById('donate-title-1').innerText;
 
         if (isNaN(donateMoney)) {
             alert('Failed to donate');
@@ -22,8 +23,21 @@ document.getElementById('btn-donate-1')
             document.getElementById('account-balance').innerText = newBalance;
 
             document.getElementById('donate-balance-1').innerText = newDonateBalance;
+            // add to transaction history
+            const div = document.createElement('div');
+            div.classList.add('border', 'rounded-2xl', 'p-6');
+            div.innerHTML = `
+        <h4 class='text-xl font-semibold'>${donateMoney} Taka is ${donateTitle}. </h4>
+        `
+            document.getElementById('history-container').appendChild(div);
+
+            alert(`
+                Congrates!
+                You Have Donated for Humankind
+                Successfully
+                `)
         }
-        else{
+        else {
             alert('Failed to donated money. Please try again.')
         }
 
@@ -38,6 +52,7 @@ document.getElementById('btn-donate-2')
         const donateMoney = getInputFieldValueById('input-donate-2');
         const balance = getTextFieldValueById('account-balance');
         const donateBalance = getTextFieldValueById('donate-balance-2');
+        const donateTitle = document.getElementById('donate-title-2').innerText;
 
         if (isNaN(donateMoney)) {
             alert('Failed to donate');
@@ -54,12 +69,27 @@ document.getElementById('btn-donate-2')
             document.getElementById('account-balance').innerText = newBalance;
 
             document.getElementById('donate-balance-2').innerText = newDonateBalance;
+            // add to transaction history
+            const div = document.createElement('div');
+            div.classList.add('border', 'rounded-2xl', 'p-6');
+            div.innerHTML = `
+        <h4 class='text-xl font-semibold'>${donateMoney} Taka is ${donateTitle}. </h4>
+        `
+            document.getElementById('history-container').appendChild(div);
+
+            alert(`
+                Congrates!
+                You Have Donated for Humankind
+                Successfully
+                `)
         }
-        else{
+        else {
             alert('Failed to donated money. Please try again.')
         }
 
     })
+
+
 // Donate card 3
 
 document.getElementById('btn-donate-3')
@@ -68,6 +98,7 @@ document.getElementById('btn-donate-3')
         const donateMoney = getInputFieldValueById('input-donate-3');
         const balance = getTextFieldValueById('account-balance');
         const donateBalance = getTextFieldValueById('donate-balance-3');
+        const donateTitle = document.getElementById('donate-title-3').innerText;
 
         if (isNaN(donateMoney)) {
             alert('Failed to donate');
@@ -84,8 +115,21 @@ document.getElementById('btn-donate-3')
             document.getElementById('account-balance').innerText = newBalance;
 
             document.getElementById('donate-balance-3').innerText = newDonateBalance;
+            // add to transaction history
+            const div = document.createElement('div');
+            div.classList.add('border', 'rounded-2xl', 'p-6');
+            div.innerHTML = `
+        <h4 class='text-xl font-semibold'>${donateMoney} Taka is ${donateTitle}. </h4>
+        `
+            document.getElementById('history-container').appendChild(div);
+            
+            alert(`
+                Congrates!
+                You Have Donated for Humankind
+                Successfully
+                `)
         }
-        else{
+        else {
             alert('Failed to donated money. Please try again.')
         }
 

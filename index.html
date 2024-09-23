@@ -29,8 +29,8 @@
 </head>
 
 <body>
-    <header>
-        <nav class="space-y-20">
+    <header class="sticky top-0 overflow-hidden z-10 backdrop-blur-sm">
+        <nav class="block space-y-10">
             <!-- nav title -->
             <div class="navbar bg-base-200">
                 <div class="navbar-start">
@@ -53,13 +53,13 @@
                 </div>
             </div>
             <!-- nav button -->
-            <div class="flex justify-center gap-3">
-                <button class="btn bg-btn-primary">Donation</button>
-                <button class="btn btn-outline">History</button>
+            <div class="flex justify-center gap-3 pb-5">
+                <button id="show-donation" class="btn bg-btn-primary">Donation</button>
+                <button id="show-history" class="btn btn-outline">History</button>
             </div>
         </nav>
     </header>
-    <main class="pt-10 md:px-24 lg:px-24">
+    <main class="pt-24 md:px-24 lg:px-24">
         <!-- donation container -->
         <div id="donation-container" class="space-y-6">
             <!-- donation card 1 -->
@@ -72,7 +72,7 @@
                             <span id="donate-balance-1" class="font-semibold">0</span>
                             <span class="font-semibold">BDT</span>
                         </button>
-                        <h1 class="text-xl font-bold">Donate for Flood at Noakhali, Bangladesh</h1>
+                        <h1 id="donate-title-1" class="text-xl font-bold">Donate for Flood at Noakhali, Bangladesh</h1>
                         <p class="">
                             The recent floods in Noakhali have caused significant damage to homes infrastructure. Your
                             donation will help provide essential supplies and to those affected by this disaster. Every
@@ -104,7 +104,7 @@
                             <span id="donate-balance-2" class="font-semibold">0</span>
                             <span class="font-semibold">BDT</span>
                         </button>
-                        <h1 class="text-xl font-bold">Donate for Flood at Feni, Bangladesh</h1>
+                        <h1 id="donate-title-2" class="text-xl font-bold donate-title">Donate for Flood at Feni, Bangladesh</h1>
                         <p class="">
                             The recent floods in Noakhali have caused significant damage to homes infrastructure. Your
                             donation will help provide essential supplies and to those affected by this disaster. Every
@@ -136,7 +136,7 @@
                             <span id="donate-balance-3" class="font-semibold">0</span>
                             <span class="font-semibold">BDT</span>
                         </button>
-                        <h1 class="text-xl font-bold">Aid for Injured in the Quota Movement</h1>
+                        <h1 id="donate-title-3" class="text-xl font-bold donate-title">Aid for Injured in the Quota Movement</h1>
                         <p class="">
                             The recent floods in Noakhali have caused significant damage to homes infrastructure. Your
                             donation will help provide essential supplies and to those affected by this disaster. Every
@@ -159,14 +159,20 @@
                 </div>
             </div>
         </div>
+        <div id="history-section" class="hidden">
+            <div id="history-container" class="space-y-4">
+
+            </div>
+        </div>
     </main>
-    <footer>
-        <div class="bg-base-200 mt-8 p-10"></div>
+    <footer class="bg-base-200 mt-8 p-10">
+        <div class=""></div>
     </footer>
 
 <!-- script link -->
 <script src="js/utilities.js"></script>
 <script src="js/donate.js"></script>
+<script src="js/features.js"></script>
 
 </body>
 
