@@ -19,3 +19,7 @@ document.getElementById('show-history')
     document.getElementById('show-donation').classList.remove('bg-btn-primary');
 })
 
+document.getElementById('btn-alert')
+.addEventListener('click', function(){
+    document.getElementById('show-success-alert').classList.add('hidden');
+})

@@ -31,11 +31,8 @@ document.getElementById('btn-donate-1')
         `
             document.getElementById('history-container').appendChild(div);
 
-            alert(`
-                Congrates!
-                You Have Donated for Humankind
-                Successfully
-                `)
+            document.getElementById('show-success-alert').classList.remove('hidden');
+
         }
         else {
             alert('Failed to donated money. Please try again.')
@@ -77,11 +74,7 @@ document.getElementById('btn-donate-2')
         `
             document.getElementById('history-container').appendChild(div);
 
-            alert(`
-                Congrates!
-                You Have Donated for Humankind
-                Successfully
-                `)
+            document.getElementById('show-success-alert').classList.remove('hidden');
         }
         else {
             alert('Failed to donated money. Please try again.')
@@ -123,11 +116,7 @@ document.getElementById('btn-donate-3')
         `
             document.getElementById('history-container').appendChild(div);
             
-            alert(`
-                Congrates!
-                You Have Donated for Humankind
-                Successfully
-                `)
+            document.getElementById('show-success-alert').classList.remove('hidden');
         }
         else {
             alert('Failed to donated money. Please try again.')
